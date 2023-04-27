@@ -1,0 +1,42 @@
+﻿<Window x:Class="final_project1.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project1"
+        mc:Ignorable="d"
+        Title="SignUp"  Height="702" Width="1110">
+    <Grid Background="Black">
+        <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="100" FontFamily="Impact" Content="Sign Up" Foreground="#A7D003" Margin="399,23,387.333,517.667"></Label>
+        <Border Margin="95,160,0,0" Background="#D1FF1A" BorderBrush="#D1FF1A" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBox Margin="75,5,25.333,5" BorderBrush="Transparent" Background="Transparent" Foreground="black"  HorizontalAlignment="Center" Height="56" Width="229" TextWrapping="Wrap" Text="username" VerticalAlignment="Center" FontFamily="Impact" FontSize="40" />
+        </Border>
+        <Border Margin="656,160,118.333,446.667" BorderThickness="5" BorderBrush="#D1FF1A" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <TextBox x:Name="username" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="698,172,154.333,459.667" TextAlignment="Center"/>
+        <Border Margin="95,255,0,0" Background="#B6E302" BorderBrush="#B6E302" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBox Margin="114,10,108.333,0" BorderBrush="Transparent" Background="Transparent" Foreground="black"  HorizontalAlignment="Center"  Height="56" Width="107" TextWrapping="Wrap" Text="email" VerticalAlignment="Center" FontFamily="Impact" FontSize="40" />
+        </Border>
+
+        <Border Margin="95,350,0,0" Background="#A7D003" BorderBrush="#A7D003" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBox Margin="75,5,25.333,5" BorderBrush="Transparent" Background="Transparent" Foreground="black"  HorizontalAlignment="Center" Height="56" Width="229" TextWrapping="Wrap" Text="password"  VerticalAlignment="Center" FontFamily="Impact" FontSize="40" />
+        </Border>
+        <Border Margin="95,448,0,0" Background="#8FB104" BorderBrush="#8FB104" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBox Margin="10,10,-52.667,0" BorderBrush="Transparent" Background="Transparent" Foreground="black"  HorizontalAlignment="Center"  Height="56" Width="372" TextWrapping="Wrap" Text="confirm password" VerticalAlignment="Center" FontFamily="Impact" FontSize="40" />
+        </Border>
+        <Border Margin="656,255,118.333,351.667" BorderThickness="5" BorderBrush="#B6E302" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <TextBox x:Name="email" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="699,266,153.333,365.667" TextAlignment="Center"/>
+        <Border Margin="656,350,118.333,256.667" BorderThickness="5" BorderBrush="#A7D003" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <TextBox x:Name="password" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="699,362,153.333,269.667" TextAlignment="Center"/>
+        <Border Margin="656,448,118.333,158.667" BorderThickness="5" BorderBrush="#8FB104" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <TextBox x:Name="password2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="699,461,153.333,170.667" TextAlignment="Center"/>
+        <Border Margin="473,515,0,0" BorderBrush="#AAADC4"  Height="120"  CornerRadius="50"  Width="136" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.2,1" StartPoint="0.5,0">
+                    <GradientStop Color="#D1FF1A" Offset="0"/>
+                    <GradientStop Color="#8FB104" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button BorderBrush="Transparent" Foreground="Black" Background="Transparent" FontFamily="Impact" FontSize="40" Content="sign up" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="120" Width="136" Click="Button_Click_1"/>
+        </Border>
+    </Grid>
+</Window>

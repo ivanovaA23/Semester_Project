@@ -1,0 +1,40 @@
+﻿<Window x:Class="final_project1.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project1"
+        mc:Ignorable="d"
+        Title="LogIn" Height="702" Width="1110">
+    <Grid Background="Black">
+        <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="100" FontFamily="Impact" Content="Log In" Foreground="#D1FF1A" Margin="437,24,416.333,516.667"></Label>
+        <Border Margin="132,215,0,0" Background="#D1FF1A" BorderBrush="#D1FF1A" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock Margin="75,5,25.333,5"  Foreground="black" Background="Transparent" HorizontalAlignment="Center" Height="56" Width="229" TextWrapping="Wrap" Text="username" VerticalAlignment="Center" FontFamily="Impact" FontSize="40"/>
+        </Border>
+        <Border Margin="656,215,118.333,391.667" BorderThickness="5" BorderBrush="#D1FF1A" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <TextBox x:Name="username_login" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="700,227,152.333,404.667" TextAlignment="Center"/>
+
+
+        <Border Margin="132,337,0,0" Background="#A7D003" BorderBrush="#A7D003" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock Margin="75,5,25.333,5" Foreground="black" Background="Transparent" HorizontalAlignment="Center" Height="56" Width="229" TextWrapping="Wrap" Text="password" VerticalAlignment="Center" FontFamily="Impact" FontSize="40" />
+        </Border>
+
+
+
+        <Border Margin="656,337,118.333,269.667" BorderThickness="5" BorderBrush="#A7D003" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <PasswordBox x:Name="password_login" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20"  Foreground="#A7D003" Margin="700,349,152.333,282.667" />
+
+
+        <Border Margin="490,398,0,0" BorderBrush="#AAADC4"  Height="120"  CornerRadius="50"  Width="136" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.2,1" StartPoint="0.5,0">
+                    <GradientStop Color="#D1FF1A" Offset="0"/>
+                    <GradientStop Color="#8FB104" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button BorderBrush="Transparent" Foreground="Black" FontFamily="Impact" FontSize="40" Background="Transparent" Content="log in" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="136" Height="120" Click="Button_Click1"/>
+        </Border>
+        <Label VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="36" FontFamily="Impact" Content="Don't have an account yet" Foreground="#D1FF1A" Margin="0,530,0,0" Height="52" Width="394"></Label>
+        <Button BorderBrush="Transparent" Foreground="#ACD604" FontFamily="Impact" FontSize="40" Background="Transparent" Content="Sign Up" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="590" Height="55"  Margin="263,580,0,0" Click="singUp"/>
+    </Grid>
+</Window>

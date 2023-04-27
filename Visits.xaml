@@ -1,0 +1,53 @@
+﻿<Window x:Class="final_project1.Visits"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project1"
+        mc:Ignorable="d"
+        Title="Visits" Height="702" Width="1110">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="landing-background-min-squarespace.jpg"/>
+        </Grid.Background>
+        <Label VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="100" FontFamily="Impact" Content="My visits" Foreground="#B6E302" Margin="0,30,0,0" Width="402"></Label>
+
+        <Border Margin="132,215,0,0" Background="#D1FF1A" BorderBrush="#D1FF1A" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock Margin="75,5,25.333,5"  Foreground="black" Background="Transparent" HorizontalAlignment="Center" Height="56" Width="229" TextWrapping="Wrap" Text="Enter date" VerticalAlignment="Center" FontFamily="Impact" FontSize="40"/>
+        </Border>
+        <Border Margin="656,215,118.333,391.667" BorderThickness="5"  CornerRadius="35" BorderBrush="#D1FF1A" Background="Transparent"  Height="66" Width="329"/>
+        <TextBox x:Name="date" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="700,227,152.333,404.667" TextAlignment="Center"/>
+
+
+        <Border Margin="132,292,0,0" Background="#A7D003" BorderBrush="#A7D003" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock  Margin="53,5,10.333,5" Foreground="black" Background="Transparent" HorizontalAlignment="Center" Height="56"  Width="266" TextWrapping="Wrap" Text="Enter Location" VerticalAlignment="Center" FontFamily="Impact" FontSize="40" />
+        </Border>
+
+
+
+        <Border Margin="656,292,118.333,314.667" BorderThickness="5" CornerRadius="35" BorderBrush="#A7D003" Background="Transparent" Height="66" Width="329"/>
+        <TextBox x:Name="location" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="700,305,152.333,326.667" TextAlignment="Center"/>
+        <Border Margin="132,371,0,0" Background="#8FB104" BorderBrush="#8FB104" CornerRadius="35"  Height="66" Width="329" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock  Margin="39,5,10.333,5" Foreground="black" Background="Transparent" HorizontalAlignment="Center" Height="56" Width="280" TextWrapping="Wrap" Text="Enter Username"  VerticalAlignment="Center" FontSize="40" FontFamily="Impact"  />
+        </Border>
+        <Border Margin="656,371,118.333,235.667" BorderThickness="5" BorderBrush="#A7D003" Background="Transparent" CornerRadius="35"  Height="66" Width="329"/>
+        <TextBox x:Name="username" VerticalAlignment="Center" HorizontalAlignment="Center" Height="41" Width="251" Background="Transparent" BorderBrush="Transparent" FontFamily="Impact" FontSize="20" Text="" Foreground="#A7D003" Margin="700,383,152.333,248.667" TextAlignment="Center"/>
+
+        <Border Margin="132,520,0,0" CornerRadius="35" Background="#D1FF1A" BorderBrush="#D1FF1A"  Height="66" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button BorderBrush="Transparent" Foreground="Black" FontFamily="Impact" FontSize="40" Background="Transparent" Content="Add" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="288" Height="55"  Margin="0,1,0,0" Click="add"/>
+        </Border>
+        <Border Margin="442,520,0,0" CornerRadius="35" Background="#D1FF1A" BorderBrush="#D1FF1A"  Height="66" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button BorderBrush="Transparent" Foreground="Black" FontFamily="Impact" FontSize="40" Background="Transparent" Content="Update" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="271" Height="55"  Margin="0,1,-0.333,0" Click="update"/>
+        </Border>
+        <Border Margin="737,520,0,0" CornerRadius="35" Background="#D1FF1A" BorderBrush="#D1FF1A"  Height="66" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button BorderBrush="Transparent" Foreground="Black" FontFamily="Impact" FontSize="40" Background="Transparent" Content="Delete" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="271" Height="55"  Margin="0,1,-0.333,0" Click="delete"/>
+        </Border>
+
+        <Button Margin="10,10,999.333,579.667" Foreground="#8D909B" BorderBrush="Transparent" Click="back"  >
+            <Button.Background>
+                <ImageBrush ImageSource="Screenshot 2023-04-25 113641.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
